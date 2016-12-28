@@ -33,8 +33,9 @@ public class UrlUtil {
 
     public static void main(String[] args) {
         String str = "测试1";
-        System.out.println(getURLEncoderString(str));
-        System.out.println(getURLDecoderString(str));
+        String result=getURLEncoderString(str);
+        System.out.println(result);
+        System.out.println(getURLDecoderString(result));
         
     }
 
