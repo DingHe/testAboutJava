@@ -11,7 +11,7 @@ public class UrlUtil {
             return "";
         }
         try {
-            result = java.net.URLDecoder.decode(str, ENCODE);
+            result = java.net.URLDecoder.decode(str.replaceAll("%", "%25"), ENCODE);
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
